@@ -1,7 +1,5 @@
-module.exports = function reverse (n) {
-let a = String(n).split('')
-let b = Number(a.reverse().join(''))
-return b
+module.exports = function reverse (n) {    
+    return Number(Math.abs(n).toString().split('').reverse().join(''))
 }
 reverse(n)
 
